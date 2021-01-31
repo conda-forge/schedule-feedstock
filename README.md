@@ -5,11 +5,11 @@ Home: https://github.com/dbader/schedule
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/schedule-feedstock/blob/master/LICENSE.txt)
 
 Summary: Job scheduling for humans.
 
-
+Documentation: https://schedule.readthedocs.io/
 
 Current build status
 ====================

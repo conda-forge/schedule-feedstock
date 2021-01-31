@@ -1,18 +1,18 @@
 {% set name = "schedule" %}
-{% set version = "0.6.0" %}
+{% set version = "1.0.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: f9fb5181283de4db6e701d476dd01b6a3dd81c38462a54991ddbb9d26db857c9
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 1654cf70860a6d4d58236c98b0f1bb71521cc2a4bbf031b6cc39c96e77d59a91
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -27,12 +27,12 @@ test:
     - schedule
 
 about:
-  home: "https://github.com/dbader/schedule"
+  home: https://github.com/dbader/schedule
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: "Job scheduling for humans."
-  doc_url: "https://schedule.readthedocs.io/"
+  summary: Job scheduling for humans.
+  doc_url: https://schedule.readthedocs.io/
 
 extra:
   recipe-maintainers:
