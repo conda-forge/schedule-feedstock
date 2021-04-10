@@ -1,5 +1,5 @@
 {% set name = "schedule" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1654cf70860a6d4d58236c98b0f1bb71521cc2a4bbf031b6cc39c96e77d59a91
+  sha256: e6ca13585e62c810e13a08682e0a6a8ad245372e376ba2b8679294f377dfc8e4
 
 build:
   number: 0
